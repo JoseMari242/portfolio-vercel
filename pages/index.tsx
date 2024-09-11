@@ -1,9 +1,14 @@
+import Nav from '@/Components/Nav';
 import React from 'react'
 
-type Props = {}
+const Homepage = () => {
+  return <div className='overflow-x-hidden'>
+    <div>
+      <Nav />
+    </div>
 
-export default function HomePage({}: Props) {
-  return (
-    <div>HomePage</div>
-  )
-}
+  </div>;
+  
+};
+
+export default Homepage
