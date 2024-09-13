@@ -7,14 +7,26 @@
 
 @layer components {
     .nav-link {
-        @apply relative font-semibold text-white cursor-pointer text-[17px] w-fit md:block;
+        @apply hidden md:block relative font-semibold text-white cursor-pointer text-[17px] w-fit;
     }
     .nav-link::after {
         content: '';
-        @apply absolute bottom-0 left-0 h-[3px] bg-yellow-400 w-full scale-x-0 transition duration-300 origin-center;
+        @apply absolute bottom-0 left-0 h-[3px] bg-green-400 w-full scale-x-0 transition duration-300 origin-center;
     }
     .nav-link:hover::after {
         @apply scale-x-100;
     }
+    /* Mobile navigation styling */
+    .nav-link-mobile {
+        @apply block md:hidden relative mb-[2rem] font-semibold text-white cursor-pointer text-[27px] w-fit;
+    }
+    .nav-link-mobile::after {
+        content: '';
+        @apply absolute bottom-0 left-0 h-[3px] bg-green-400 w-full scale-x-0 transition duration-300 origin-center;
+    }
+    .nav-link-mobile:hover::after {
+        @apply scale-x-100;
+    }
 }
+
 
