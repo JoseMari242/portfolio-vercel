@@ -1,6 +1,8 @@
+import About from '@/Components/About';
 import Hero from '@/Components/Hero';
 import MobileNav from '@/Components/MobileNav';
 import Nav from '@/Components/Nav';
+import Services from '@/Components/Services';
 import React, { useState } from 'react'
 
 const Homepage = () => {
@@ -10,11 +12,13 @@ const Homepage = () => {
 
   return <div className='overflow-x-hidden'>
     <div>
-      {/* NavBar */}
       <MobileNav nav={nav} closeNav={closeNav}/>
       <Nav openNav={openNav}/>
-      {/* Hero section */}
       <Hero />
+      <div className='relative z-[30]'>
+        <About/>
+        <Services/>
+      </div>
     </div>
   </div>;
   
