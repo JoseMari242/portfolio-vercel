@@ -6,12 +6,14 @@ const TextEffect = () => {
       sequence={[
         
         'Desarrollador de software',
+        1500,
+        'Desarrollador web',
         1500, 
         'Abogado',
         1500,
       ]}
       
-      speed={50}
+      speed={10}
       className='text-[2rem] md:text-[3rem] text-[#55e6a5] font-bold uppercase'
       repeat={Infinity}
     />

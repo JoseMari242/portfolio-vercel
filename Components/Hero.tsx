@@ -16,8 +16,9 @@ const Hero = () => {
           </h1>
           <TextEffect />
           <p className='mt-[1.5rem] text-[18px] text-[#ffffff92]'>
-            Soy desarrollador full stack especializado en tecnologías como JavaScript, TypeScript, React, Node.js y Python. 
-            He trabajado en diversos proyectos, desde aplicaciones frontend hasta aplicaciones backend complejas.
+            Soy desarrollador full stack especializado en tecnologías como JavaScript, TypeScript, React y Node.js. 
+            He trabajado en diversos proyectos full stack que podrás ver en mi portfolio.
+            También estudié derecho y soy abogado.
           </p>
           {/* Botón para descargar el CV */}
           <div className='mt-[2rem] flex-col space-y-6 sm:space-y-0 sm:flex sm:flex-row items-center sm:space-x-6'>
