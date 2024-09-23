@@ -1,5 +1,5 @@
 import About from '@/Components/About';
-import Footer from '@/Components/Footer';
+import Contact from '@/Components/Contact';
 import Hero from '@/Components/Hero';
 import MobileNav from '@/Components/MobileNav';
 import Nav from '@/Components/Nav';
@@ -23,7 +23,7 @@ const Homepage = () => {
         <Services/>
         <Skills/>
         <Projects/>
-        <Footer/>
+        <Contact/>
       </div>
     </div>
   </div>;
