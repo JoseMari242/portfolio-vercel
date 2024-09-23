@@ -4,9 +4,24 @@ import React from 'react';
 interface Props {
   nav: boolean;
   closeNav: () => void;
+  scrollToSection: (ref: React.RefObject<HTMLDivElement>) => void;
+  aboutRef: React.RefObject<HTMLDivElement>;
+  servicesRef: React.RefObject<HTMLDivElement>;
+  skillsRef: React.RefObject<HTMLDivElement>;
+  projectsRef: React.RefObject<HTMLDivElement>;
+  contactRef: React.RefObject<HTMLDivElement>;
 }
 
-const MobileNav = ({ nav, closeNav }: Props) => {
+const MobileNav = ({
+  nav,
+  closeNav,
+  scrollToSection,
+  aboutRef,
+  servicesRef,
+  skillsRef,
+  projectsRef,
+  contactRef,
+}: Props) => {
   const navAnimation = nav ? 'translate-x-0' : 'translate-x-[-100%]';
 
   return (
@@ -15,17 +30,16 @@ const MobileNav = ({ nav, closeNav }: Props) => {
     >
       {/* Menú con opciones */}
       <div className="w-full h-full flex flex-col items-center justify-center space-y-8">
-        <div className="nav-link-mobile">HOME</div>
-        <div className="nav-link-mobile">SERVICES</div>
-        <div className="nav-link-mobile">ABOUT</div>
-        <div className="nav-link-mobile">PROJECTS</div>
-        <div className="nav-link-mobile">CONTACT</div>
-        
+        <div className="nav-link-mobile" onClick={() => { scrollToSection(aboutRef); closeNav(); }}>ABOUT</div>
+        <div className="nav-link-mobile" onClick={() => { scrollToSection(servicesRef); closeNav(); }}>SERVICES</div>
+        <div className="nav-link-mobile" onClick={() => { scrollToSection(skillsRef); closeNav(); }}>SKILLS</div>
+        <div className="nav-link-mobile" onClick={() => { scrollToSection(projectsRef); closeNav(); }}>PROJECTS</div>
+        <div className="nav-link-mobile" onClick={() => { scrollToSection(contactRef); closeNav(); }}>CONTACT</div>
       </div>
       {/* Icono de cierre */}
       <div
         onClick={closeNav}
-        className="absolute z-[100000000] cursor-pointer top-[2rem] right-[2rem] w-[2rem] h-[2rem] text-green-300 z-[100000]"
+        className="absolute cursor-pointer top-[2rem] right-[2rem] w-[2rem] h-[2rem] text-green-300"
       >
         <XMarkIcon />
       </div>
