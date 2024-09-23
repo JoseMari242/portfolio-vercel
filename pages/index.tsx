@@ -2,6 +2,7 @@ import About from '@/Components/About';
 import Hero from '@/Components/Hero';
 import MobileNav from '@/Components/MobileNav';
 import Nav from '@/Components/Nav';
+import Projects from '@/Components/Projects';
 import Services from '@/Components/Services';
 import Skills from '@/Components/Skills';
 import React, { useState } from 'react'
@@ -20,6 +21,7 @@ const Homepage = () => {
         <About/>
         <Services/>
         <Skills/>
+        <Projects/>
       </div>
     </div>
   </div>;

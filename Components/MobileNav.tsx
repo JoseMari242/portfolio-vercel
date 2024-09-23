@@ -15,10 +15,10 @@ const MobileNav = ({ nav, closeNav }: Props) => {
     >
       {/* Menú con opciones */}
       <div className="w-full h-full flex flex-col items-center justify-center space-y-8">
-        <div className="nav-link-mobile">Home</div>
+        <div className="nav-link-mobile">HOME</div>
         <div className="nav-link-mobile">SERVICES</div>
         <div className="nav-link-mobile">ABOUT</div>
-        <div className="nav-link-mobile">PROJECT</div>
+        <div className="nav-link-mobile">PROJECTS</div>
         <div className="nav-link-mobile">CONTACT</div>
         
       </div>
