@@ -35,7 +35,7 @@ const Skills = () => {
           skill4='Prisma' />
         </div>
         <div>
-          <SkillsItem title="Abogado" year="2013 - 2020"/>
+          <SkillsItem title="Abogado" year="2013 - 2023"/>
           <SkillsLanguage 
           skill1="Derecho laboral"
           skill2="Derecho administrativo"

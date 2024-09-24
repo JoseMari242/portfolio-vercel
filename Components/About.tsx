@@ -1,4 +1,4 @@
-import { ArrowDownTrayIcon } from '@heroicons/react/20/solid';
+import { ArrowTopRightOnSquareIcon } from '@heroicons/react/20/solid';
 import React from 'react';
 
 const About = () => {
@@ -34,12 +34,13 @@ const About = () => {
           </div>
           <div className='mt-[2rem] flex items-center'>
             <a
-              href='/item/CV_Jose_Maria_Gil_Lopez.pdf'
-              download="CV_Jose_Maria_Gil_Lopez.pdf"
+              href='https://www.linkedin.com/in/josemariagillopez/'
+              target="_blank"
+              rel="noopener noreferrer"
               className='px-[2rem] hover:bg-yellow-400 transition-all duration-200 py-[1rem] text-[18px] font-bold uppercase bg-[#55e6a5] text-black flex items-center space-x-2'
             >
-              <p>Download CV</p>
-              <ArrowDownTrayIcon className='w-[1.6rem] h-[1.7rem] text-black' />
+              <p>Visita mi LinkedIn</p>
+              <ArrowTopRightOnSquareIcon className='w-[1.6rem] h-[1.7rem] text-black' />
             </a>
           </div>
         </div>
