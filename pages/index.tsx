@@ -8,6 +8,7 @@ import Services from '@/Components/Services';
 import Skills from '@/Components/Skills';
 import React, { useState, useRef } from 'react';
 
+
 const Homepage = () => {
   const [nav, setNav] = useState(false);
   const openNav = () => setNav(true);

@@ -1,5 +1,5 @@
 import React from 'react';
-import Particle from './Particle';
+
 import TextEffect from './TextEffect';
 import Image from 'next/image';
 import { ArrowDownTrayIcon } from '@heroicons/react/20/solid';
@@ -7,7 +7,7 @@ import { ArrowDownTrayIcon } from '@heroicons/react/20/solid';
 const Hero = () => {
   return (
     <div className="h-[88vh] bg-[url('/images/banner.jpg')] bg-cover bg-center">
-      <Particle />
+
       <div className="w-[80%] grid-cols-1 mx-auto grid lg:grid-cols-2 gap-[3rem] h-[100%] items-center">
         {/* Texto de introducción */}
         <div>
